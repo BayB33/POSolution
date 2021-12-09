@@ -1,0 +1,12 @@
+* {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+    height: 6rem;
+}
+
+.logo img {
+    width: 12rem;
+    height: auto;
+}
