@@ -11,36 +11,80 @@
     <!--Own CSS-->
     <link rel="stylesheet" href="styles/style.css">
 
-
     <title>POS Solution</title>
 </head>
 <body>
+    <!--HEADER-->
     <header class="container-fluid">
-        <div class="row justify-content-between header">
+        <div class="row justify-content-between header ">
+            <!--LOGO-->
             <div class="logo col-lg-2 align-self-center">
-                <img src="images/Logo-POS.png" alt="Logo">
+                <img src="images/Logo-POS.png" alt="Logo" class="img-fluid mx-auto d-block">
             </div>
+            <!--NAVIGATION MENU-->
             <nav class="col-lg-8 align-self-center">
-                <ul class="list-unstyled d-flex justify-content-around">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="">Caractéristiques</a></li>
-                    <li><a href="">Nos Tarifs</a></li>
-                    <li><a href="">Types de Commerces</a></li>
-                    <li><a href="">Aide & Contact</a></li>
+                <ul class="main_menu list-unstyled d-flex justify-content-around">
+                    <li><a class="btn btn-light" href="#">Accueil</a></li>
+                    <li><a class="btn btn-light" href="">Caractéristiques</a></li>
+                    <li><a class="btn btn-light" href="">Nos Tarifs</a></li>
+                    <li class="dropdown "><a href="" class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types de Commerces</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Café</a></li>
+                            <li><a class="dropdown-item" href="">Restaurant</a></li>
+                            <li><a class="dropdown-item" href="">Bar</a></li>
+                            <li><a class="dropdown-item" href="">Boutique</a></li>
+                            <li><a class="dropdown-item" href="">Supermarché</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="btn btn-light" href="">Aide & Contact</a></li>
                 </ul>
             </nav>
+            <!--LOGIN MENU-->
             <div class="login_options col-lg-2 align-self-center">
-                <a href="#">Se Connecter</a>
-                <a href="#">S'inscrire</a>
+                <a href="#" class="btn btn-primary">Se Connecter</a>
+                <a href="#" class="btn btn-primary">S'inscrire</a>
             </div>
         </div>
     </header>
-    <main class="container">
-        
 
+    <!--BANNER-->
+    <div class="banner container-fluid">
+
+    </div>
+
+    <!--MAIN CONTENT-->
+    <main class="container">
+        <section class="row section1">
+            <h2>Moins de gestion, plus de succès</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, illo!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <img src="images/biz.jpg" alt="Brainstorming" class="img-fluid mx-auto d-block col-4">
+            <img src="images/biz2.jpg" alt="Image d'une brasserie" class="img-fluid mx-auto d-block col-4">
+            <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="img-fluid mx-auto d-block col-4">  
+        </section>
+        <section class="row section2">
+            <h2>Nos meilleurs outils à votre disposition</h2>
+             <nav>
+                 <ul class="d-flex list-unstyled justify-content-around">
+                     <li><a class="btn btn-light" href="">Paiements</a></li>
+                     <li><a class="btn btn-light" href="">Gestion des employés</a></li>
+                     <li><a class="btn btn-light" href="">Inventaires</a></li>
+                     <li><a class="btn btn-light" href="">Analyse des Ventes</a></li>
+                     <li><a class="btn btn-light" href="">Programme de fidélité</a></li>
+                     <li><a class="btn btn-light" href="">Gestion Multi-Commerces</a></li>
+                 </ul>
+             </nav>
+        </section>
     </main>
+    
+    <!--FOOTER-->
     <footer class="container-fluid">
         
     </footer>
+
+    <!--BOOTSTRAP JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
