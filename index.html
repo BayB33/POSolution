@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <!--Own CSS-->
     <link rel="stylesheet" href="styles/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 
     <title>POS Solution</title>
 </head>
@@ -24,10 +28,10 @@
             <!--NAVIGATION MENU-->
             <nav class="col-lg-8 align-self-center">
                 <ul class="main_menu list-unstyled d-flex justify-content-around">
-                    <li><a class="btn btn-light" href="#">Accueil</a></li>
-                    <li><a class="btn btn-light" href="">Caractéristiques</a></li>
-                    <li><a class="btn btn-light" href="">Nos Tarifs</a></li>
-                    <li class="dropdown "><a href="" class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types de Commerces</a>
+                    <li><a class="" href="#">Accueil</a></li>
+                    <li><a class="" href="">Caractéristiques</a></li>
+                    <li><a class="" href="">Nos Tarifs</a></li>
+                    <li class="dropdown "><a href="" class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types de Commerces</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li><a class="dropdown-item" href="">Café</a></li>
                             <li><a class="dropdown-item" href="">Restaurant</a></li>
@@ -36,42 +40,75 @@
                             <li><a class="dropdown-item" href="">Supermarché</a></li>
                         </ul>
                     </li>
-                    <li><a class="btn btn-light" href="">Aide & Contact</a></li>
+                    <li><a class="" href="">Aide & Contact</a></li>
                 </ul>
             </nav>
             <!--LOGIN MENU-->
-            <div class="login_options col-lg-2 align-self-center">
-                <a href="#" class="btn btn-primary">Se Connecter</a>
-                <a href="#" class="btn btn-primary">S'inscrire</a>
+            <div class="login_options col-lg-2 align-self-center d-flex">
+                <ul class="list-unstyled">
+                    <li class="dropdown">
+                        <a href="#" class="login_btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Se Connecter</a>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Adresse Mail </label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Mot de Passe</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Mot de passe">
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                  Se souvenir de moi
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn_form_perso">Se Connecter</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Créer un compte</a>
+                            <a class="dropdown-item" href="#">Mot de passe oublié?</a>
+                          </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
 
     <!--BANNER-->
     <div class="banner container-fluid">
-
+    <section class="banner_section row col-lg-12">
+        <article class="col-lg-6 align-self-center">
+            <h1>L'outil de gestion le plus complet pour votre business</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod provident tempora excepturi sunt recusandae eum pariatur hic cupiditate deserunt omnis.</p>
+        </article>
+        <aside class="col-lg-6 align-self-center">
+            <img class="banner_img" src="images/banner_pic.jpg" alt="Outils Informatiques">
+        </aside>
+    </section>
     </div>
 
     <!--MAIN CONTENT-->
     <main class="container">
-        <section class="row section1">
+        <section class="row section1 mb-5">
             <h2>Moins de gestion, plus de succès</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, illo!</p>
             <p>Lorem ipsum dolor sit amet.</p>
-            <img src="images/biz.jpg" alt="Brainstorming" class="img-fluid mx-auto d-block col-4">
-            <img src="images/biz2.jpg" alt="Image d'une brasserie" class="img-fluid mx-auto d-block col-4">
-            <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="img-fluid mx-auto d-block col-4">  
+            <img src="images/biz.jpg" alt="Brainstorming" class="img-fluid mx-auto d-block col-3">
+            <img src="images/biz2.jpg" alt="Image d'une brasserie" class="img-fluid mx-auto d-block col-3">
+            <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="img-fluid mx-auto d-block col-3">  
         </section>
-        <section class="row section2">
+        <section class="row section2 mb-5">
             <h2>Nos meilleurs outils à votre disposition</h2>
              <nav>
-                 <ul class="d-flex list-unstyled justify-content-around">
-                     <li><a class="btn btn-light" href="">Paiements</a></li>
-                     <li><a class="btn btn-light" href="">Gestion des employés</a></li>
-                     <li><a class="btn btn-light" href="">Inventaires</a></li>
-                     <li><a class="btn btn-light" href="">Analyse des Ventes</a></li>
-                     <li><a class="btn btn-light" href="">Programme de fidélité</a></li>
-                     <li><a class="btn btn-light" href="">Gestion Multi-Commerces</a></li>
+                 <ul class="mid_menu d-flex list-unstyled justify-content-around">
+                     <li><a class="" href="">Paiements</a></li>
+                     <li><a class="" href="">Gestion des employés</a></li>
+                     <li><a class="" href="">Inventaires</a></li>
+                     <li><a class="" href="">Analyse des Ventes</a></li>
+                     <li><a class="" href="">Programme de fidélité</a></li>
+                     <li><a class="" href="">Gestion Multi-Commerces</a></li>
                  </ul>
              </nav>
         </section>
