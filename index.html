@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>POS Solution</title>
 </head>
@@ -29,10 +32,19 @@
             <nav class="col-lg-8 align-self-center">
                 <ul class="main_menu list-unstyled d-flex justify-content-around">
                     <li><a class="" href="#">Accueil</a></li>
-                    <li><a class="" href="">Caractéristiques</a></li>
+                    <li class="dropdown drop"><a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Outils</a>
+                        <ul class="dropdown-menu mt-0" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Paiements</a></li>
+                            <li><a class="dropdown-item" href="">Gestion des employés</a></li>
+                            <li><a class="dropdown-item" href="">Inventaires</a></li>
+                            <li><a class="dropdown-item" href="">Analyse des Ventes</a></li>
+                            <li><a class="dropdown-item" href="">Programme de fidélité</a></li>
+                            <li><a class="dropdown-item" href="">Gestion Multi-Commerces</a></li>
+                        </ul>
+                    </li>
                     <li><a class="" href="">Nos Tarifs</a></li>
-                    <li class="dropdown "><a href="" class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types de Commerces</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li class="dropdown drop"><a href="" class=" dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Types de Commerces</a>
+                        <ul class="dropdown-menu mt-0" aria-labelledby="dropdownMenuLink">
                             <li><a class="dropdown-item" href="">Café</a></li>
                             <li><a class="dropdown-item" href="">Restaurant</a></li>
                             <li><a class="dropdown-item" href="">Bar</a></li>
@@ -48,6 +60,7 @@
                 <ul class="list-unstyled">
                     <li class="dropdown">
                         <a href="#" class="login_btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Se Connecter</a>
+                        
                         <div class="dropdown-menu">
                             <form class="px-4 py-3">
                               <div class="form-group">
@@ -77,45 +90,128 @@
     </header>
 
     <!--BANNER-->
-    <div class="banner container-fluid">
-    <section class="banner_section row col-lg-12">
-        <article class="col-lg-6 align-self-center">
+    <div class="banner container-fluid mb-5">
+    <section class="banner_section row justify-content-between">
+        <article class="banner_article col-lg-6 align-self-center ">
             <h1>L'outil de gestion le plus complet pour votre business</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod provident tempora excepturi sunt recusandae eum pariatur hic cupiditate deserunt omnis.</p>
         </article>
         <aside class="col-lg-6 align-self-center">
-            <img class="banner_img" src="images/banner_pic.jpg" alt="Outils Informatiques">
+            <img class="banner_img" src="images/banner_pic1.png" alt="Outils Informatiques">
         </aside>
     </section>
     </div>
 
     <!--MAIN CONTENT-->
     <main class="container">
+        <!--First Section-->
         <section class="row section1 mb-5">
-            <h2>Moins de gestion, plus de succès</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, illo!</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <img src="images/biz.jpg" alt="Brainstorming" class="img-fluid mx-auto d-block col-3">
-            <img src="images/biz2.jpg" alt="Image d'une brasserie" class="img-fluid mx-auto d-block col-3">
-            <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="img-fluid mx-auto d-block col-3">  
+            <article class="row">
+                <h2>Travaillez avec plus de Liberté</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, illo!</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+            <aside class="first_section_img row justify-content-between">
+                <img src="images/biz.jpg" alt="Brainstorming" class="col-4 p-2">
+                <img src="images/biz2.jpg" alt="Image d'une brasserie" class="col-4 p-2">
+                <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="col-4 p-2"> 
+            </aside>     
         </section>
-        <section class="row section2 mb-5">
+
+
+        <!--Second Section-->
+        <section class="section2 mb-5">
+            <div class="row mb-5">
             <h2>Nos meilleurs outils à votre disposition</h2>
-             <nav>
-                 <ul class="mid_menu d-flex list-unstyled justify-content-around">
-                     <li><a class="" href="">Paiements</a></li>
-                     <li><a class="" href="">Gestion des employés</a></li>
-                     <li><a class="" href="">Inventaires</a></li>
-                     <li><a class="" href="">Analyse des Ventes</a></li>
-                     <li><a class="" href="">Programme de fidélité</a></li>
-                     <li><a class="" href="">Gestion Multi-Commerces</a></li>
+            <nav>
+                <ul class="mid_menu d-flex list-unstyled justify-content-around">
+                    <li><a class="" href="">Paiements</a></li>
+                    <li><a class="" href="">Gestion des employés</a></li>
+                    <li><a class="" href="">Inventaires</a></li>
+                    <li><a class="" href="">Analyse des Ventes</a></li>
+                    <li><a class="" href="">Programme de fidélité</a></li>
+                    <li><a class="" href="">Gestion Multi-Commerces</a></li>
                  </ul>
              </nav>
+            </div>
+
+            <div class="article_containers row mb-5">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Paiements</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p> 
+                </article>
+                <aside class="col-lg-6">
+                    <img src="images/payment.png" alt="TPE">
+                </aside>
+            </div>
+
+            <div class="article_containers row d-flex flex-row-reverse mb-5">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Management</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                </article>
+                <aside class="col-lg-6">
+                    <img src="images/management.png" alt="Outils de Management">
+                </aside>
+            </div>
+
+            <div class="article_containers row mb-5">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Inventaire</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                </article>
+                <aside class="col-lg-6">
+                    <img src="images/inventory.png" alt="Entrepot">
+                </aside>
+            </div>
         </section>
     </main>
     
     <!--FOOTER-->
-    <footer class="container-fluid">
+    <footer class="container-fluid pt-3">
+        <div class="row">
+            <div class="col-lg-4 footer_square">
+                <h5>Outils</h5>
+                <ul class="list-unstyled">
+                    <li><a class="" href="">Paiements</a></li>
+                    <li><a class="" href="">Gestion des employés</a></li>
+                    <li><a class="" href="">Inventaires</a></li>
+                    <li><a class="" href="">Analyse des Ventes</a></li>
+                    <li><a class="" href="">Programme de fidélité</a></li>
+                    <li><a class="" href="">Gestion Multi-Commerces</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer_square">
+                <h5>Types de Commerces</h5>
+                <ul class="list-unstyled">
+                    <li><a class="" href="">Café</a></li>
+                            <li><a class="" href="">Restaurant</a></li>
+                            <li><a class="" href="">Bar</a></li>
+                            <li><a class="" href="">Boutique</a></li>
+                            <li><a class="" href="">Supermarché</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer_square">
+                <h5>Potion</h5>
+                <ul class="list-unstyled">
+                    <li><a class="" href="">Paiements</a></li>
+                    <li><a class="" href="">Gestion des employés</a></li>
+                    <li><a class="" href="">Inventaires</a></li>
+                    <li><a class="" href="">Analyse des Ventes</a></li>
+                    <li><a class="" href="">Programme de fidélité</a></li>
+                    <li><a class="" href="">Gestion Multi-Commerces</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom row justify-content-between mt-2 pt-2">
+            <p class="copyright col-lg-3 text-light">&copy;2021 Potion</p>
+            <ul class="col-lg-6 list-unstyled d-flex justify-content-around">
+                <li><a href="">Conditions d'utilisation</a></li>
+                <li><a href="">Confidentialité</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Accessibilité</a></li>
+            </ul>
+        </div>
         
     </footer>
 
