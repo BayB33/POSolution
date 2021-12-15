@@ -29,7 +29,7 @@
                 <img src="images/Logo-POS.png" alt="Logo" class="img-fluid mx-auto d-block">
             </div>
             <!--NAVIGATION MENU-->
-            <nav class="col-lg-8 align-self-center">
+            <nav class="col-lg-8 col-12 align-self-center">
                 <ul class="main_menu list-unstyled d-flex justify-content-around">
                     <li><a class="" href="#">Accueil</a></li>
                     <li class="dropdown drop"><a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Outils</a>
@@ -91,13 +91,16 @@
 
     <!--BANNER-->
     <div class="banner container-fluid mb-5">
-    <section class="banner_section row justify-content-between">
+    <section class="banner_section row justify-content-between d-flex flex-row-reverse">
         <article class="banner_article col-lg-6 align-self-center ">
             <h1>L'outil de gestion le plus complet pour votre business</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod provident tempora excepturi sunt recusandae eum pariatur hic cupiditate deserunt omnis.</p>
+            <img class="banner_img banner_img_md" src="images/banner_pic1.png" alt="Outils Informatiques">
+            <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod provident tempora excepturi sunt recusandae eum pariatur hic cupiditate deserunt omnis.</p>
+            <a href=""><img src="images/gplay.png" alt=""></a>
+            <a href=""><img src="images/appstore.png" alt=""></a>
         </article>
         <aside class="col-lg-6 align-self-center">
-            <img class="banner_img" src="images/banner_pic1.png" alt="Outils Informatiques">
+            <img class="banner_img banner_img_xl" src="images/banner_pic1.png" alt="Outils Informatiques">
         </aside>
     </section>
     </div>
@@ -112,24 +115,24 @@
                 <p>Lorem ipsum dolor sit amet.</p>
             </article>
             <aside class="first_section_img row justify-content-between">
-                <img src="images/biz.jpg" alt="Brainstorming" class="col-4 p-2">
-                <img src="images/biz2.jpg" alt="Image d'une brasserie" class="col-4 p-2">
-                <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="col-4 p-2"> 
+                <img src="images/biz.jpg" alt="Brainstorming" class="col-xl-4 col-12 p-2">
+                <img src="images/biz2.jpg" alt="Image d'une brasserie" class="col-xl-4 col-12  p-2">
+                <img src="images/biz3.jpg" alt="Image d'un Barber Shop" class="col-xl-4 col-12 p-2"> 
             </aside>     
         </section>
 
 
         <!--Second Section-->
         <section class="section2 mb-5">
-            <div class="row mb-5">
+            <div class="mid_menu_div row">
             <h2>Nos meilleurs outils à votre disposition</h2>
             <nav>
                 <ul class="mid_menu d-flex list-unstyled justify-content-around">
                     <li><a class="" href="">Paiements</a></li>
-                    <li><a class="" href="">Gestion des employés</a></li>
+                    <li><a class="" href="">Management</a></li>
                     <li><a class="" href="">Inventaires</a></li>
                     <li><a class="" href="">Analyse des Ventes</a></li>
-                    <li><a class="" href="">Programme de fidélité</a></li>
+                    <li><a class="" href="">Fichier Clients</a></li>
                     <li><a class="" href="">Gestion Multi-Commerces</a></li>
                  </ul>
              </nav>
@@ -138,30 +141,78 @@
             <div class="article_containers row mb-5">
                 <article class="col-lg-6 align-self-center">
                     <h3>Paiements</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p> 
+                    <img class="md-position" src="images/payment.png" alt="TPE">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <a href="">En savoir plus sur nos outils de paiement ></a> 
                 </article>
                 <aside class="col-lg-6">
-                    <img src="images/payment.png" alt="TPE">
+                    <img class="xl-position" src="images/payment.png" alt="TPE">
                 </aside>
             </div>
 
             <div class="article_containers row d-flex flex-row-reverse mb-5">
                 <article class="col-lg-6 align-self-center">
                     <h3>Management</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <img class="md-position" src="images/management.png" alt="Outils de Management">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <ul class="list-unstyled">
+                        <li>Tool 1</li>
+                        <li>Tool 2</li>
+                        <li>Tool 3</li>
+                        <li>Tool 4</li>
+                    </ul>
+                    <a href="">En savoir plus sur nos outils de management ></a> 
                 </article>
                 <aside class="col-lg-6">
-                    <img src="images/management.png" alt="Outils de Management">
+                    <img class="resize xl-position" src="images/management.png" alt="Outils de Management">
                 </aside>
             </div>
 
             <div class="article_containers row mb-5">
                 <article class="col-lg-6 align-self-center">
                     <h3>Inventaire</h3>
+                    <img class="md-position" src="images/inventory.png" alt="Entrepot">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <a href="">En savoir plus sur nos outils d'inventaire > </a> 
                 </article>
                 <aside class="col-lg-6">
-                    <img src="images/inventory.png" alt="Entrepot">
+                    <img class="xl-position" src="images/inventory.png" alt="Entrepot">
+                </aside>
+            </div>
+
+            <div class="article_containers row mb-5 d-flex flex-row-reverse">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Analyse des Ventes</h3>
+                    <img class="resize md-position" src="images/ventes.png" alt="Entrepot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <a href="">En savoir plus sur nos outils d'analayse des ventes > </a> 
+                </article>
+                <aside class="col-lg-6">
+                    <img class="resize xl-position" src="images/ventes.png" alt="Entrepot">
+                </aside>
+            </div>
+
+            <div class="article_containers row mb-5">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Fichier Clients</h3>
+                    <img class="md-position" src="images/clients.png" alt="Entrepot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <a href="">En savoir plus sur notre systeme de fidélisation > </a> 
+                </article>
+                <aside class="col-lg-6">
+                    <img class="xl-position" src="images/clients.png" alt="Entrepot">
+                </aside>
+            </div>
+
+            <div class="article_containers row mb-5 d-flex flex-row-reverse">
+                <article class="col-lg-6 align-self-center">
+                    <h3>Gestion Multi-Commerce</h3>
+                    <img class="resize md-position" src="images/businesses.png" alt="Entrepot">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat minus soluta ut temporibus nemo earum dolores ullam, perferendis eveniet expedita!</p>
+                    <a href="">Vous possédez plusieurs commerces? Nous vous aidons à tout gérer avec un seul outil > </a> 
+                </article>
+                <aside class="col-lg-6">
+                    <img class="resize xl-position" src="images/businesses.png" alt="Entrepot">
                 </aside>
             </div>
         </section>
