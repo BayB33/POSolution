@@ -1,0 +1,47 @@
+main form h3 {
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+main form {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+main form label, main form h3, main form button, main form p {
+    font-family: 'Iceland', cursive;
+}
+
+main form button {
+    background: linear-gradient(#df0f00, rgb(255, 64, 64));
+    color: whitesmoke;
+}
+
+input {
+    font-size: .8rem;
+}
+
+main form img {
+    width: 50%;
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+@media (max-width:540px){
+    main form {
+        font-size: .6rem;
+    }
+
+    main form h3 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: .5rem;
+    }
+}
