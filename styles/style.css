@@ -9,7 +9,7 @@ html {
 }
 
 main {
-    font-size: 1.1rem;
+    
 }
 
 a {
@@ -246,7 +246,7 @@ footer ul li{
 }
 
 
-
+/*Ecran Large*/
 @media (max-width:1024px) {
 
     .header {
@@ -288,6 +288,7 @@ footer ul li{
     }
 }
 
+/*Ecran Moyen*/
 @media (max-width:810px) {
     html {
         font-size: 2.5rem;
@@ -414,6 +415,7 @@ footer ul li{
     
 }
 
+/*Petit Ecran*/
 @media (max-width:540px) {
        .logo img {
         width: fit-content;
